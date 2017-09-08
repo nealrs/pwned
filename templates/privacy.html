@@ -8,47 +8,71 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="{{ url_for('static', filename='img/shield_not_square.png') }}"> 
         <link rel="apple-touch-icon" href="{{ url_for('static', filename='img/shield_not_square.png') }}"> 
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:300,400" rel="stylesheet">        <style>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:300,400,300i,400i" rel="stylesheet">        <style>
             h1{
                 Font-Family: 'Raleway', Sans-Serif;
                 Font-Size: 2rem;
             }
-
             h2 {
                 Font-Family: 'Raleway', Sans-Serif;
                 Font-Size: 1.5rem;
             }
-
             p {
                 Font-Family: 'Open Sans', Sans-Serif;
                 Font-Size: 1rem;
                 line-height: 1.5rem;
             }
-
             a {
                 color: #60813f
             }
+            .italic{
+                font-style:italic;
+            }
+            .header{
+                text-align:center;
+                margin-top:.5rem;
+            }
+            .header img{
+                max-height:150px; 
+                min-height:80px;
+            }
+            body{
+                margin:auto; 
+                max-width:600px; 
+                padding: 0 1.5rem;
+            }
         </style>
     </head>
-    <body style="margin:auto; max-width:600px; padding: 0 20px;">
-        <p style="text-align:center;margin-top:10px;"><img src="{{ url_for('static', filename='img/shield_not_square.png') }}" style="height:150px;"></p>
-        <h1>Hack Me Privacy Policy &amp; FAQ</h1>
+    <body>
+        <p class="header"><img src="{{ url_for('static', filename='img/shield_not_square.png') }}"></p>
+        <h1>Hack Me FAQ &amp; Privacy Policy</h1>
+        <!--<p>Say <span class="italic">"Alexa, enable Hack Me"</span> or <a href="#">click here</a> to install.</p>-->
         <h2>What does Hack Me do?</h2>
-        <p>Hack Me is an Alexa Skill that checks if your email address has been involved in a recent internet security breach.</p>
+        <p>Hack Me is an Alexa Skill that checks if your email address has been involved in recent internet security breaches.</p>
 
-        <h2>How do you actually do that?</h2>
-        <p>When you first invoke the skill, you'll be asked to link it to your Amazon account. This enables us to request your name and email address from Amazon. Then we use Troy Hunt's <a href="https://haveibeenpwned.com">HaveIBeenPwned.com</a> API to determine if your email has ever been involved in a security breach. Finally, we tell you where and when using Alexa's TTS engine. That's it.</p>
+        <h2>How does it actually do that?</h2>
+        <p>1. When you first launch the skill, you'll be asked to link it to your Amazon account.</p>
+        <p>2. Once linked, the skill retrieves your name &amp; email address from Amazon's Profile API.</p>
+        <p>3. Next, the skill runs your email address against Troy Hunt's <a href="https://haveibeenpwned.com">HaveIBeenPwned.com</a> API to determine if your email has ever been involved in a security breach.</p>
+        <p>4. Finally, it'll tell you where and when using Alexa's TTS engine. That's it!</p>
 
-        <h2>What about my privacy and data?</h2>
-        <p>The whole point of this is security. So no, we'll never intentionally share, leak, sell, or store your personal information. And if you unlink or uninstall the Skill, we'll immediately lose access to your Amazon account information.</p>
+        <h2>What about my privacy and personal data!?</h2>
+        <p>The whole point of this is to help you be <span class="italic">more</span> secure online. So no, we'll never intentionally share, leak, sell, or store your personal information.</p>
+        
+        <p>And when you unlink or uninstall the Skill, we immediately lose access to your name and email.</p>
     
         <h2>What are your ToS?</h2>
-        <p>Look, I'm not a lawyer. <a href="https://nealshyam.com">I'm just a guy</a> who likes to write code. This software and service are provided without any gaurantees or anything &mdash; but <a href="https://github.com/nealrs/pwned">I'm open sourcing it under MIT</a>, so feel free to audit the code or send me a pull request.</p>
+        <p>Look, I'm not a lawyer. <a href="https://nealshyam.com">I'm just a guy</a> who likes to <a href="https://devpost.com/nealrs">write code</a>. This software and service are provided without any gaurantees or liability &mdash; but <a href="https://github.com/nealrs/pwned">it's open sourced under MIT</a>, so feel free to audit the code or send me a pull request.</p>
+
+        <p>If you like this skill, please leave a nice review and <a href="https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Dalexa-skills&field-keywords=neal+shyam">check out my other skills</a>. If you don't, tell me how to make it better.</p>
+
+        <h2>You're good at this, can I hire you?</h2>
+        <p>Yep. <a href="mailto:nealrs+hackme@gmail.com?subject=Heyyy">Let's talk</a>.</p>
     
         <h2>That's a nice icon, where did you get it?</h2>
-        <p>I got it from <a href="https://icons8.com/icon/42849/security-checked">Icons8.com</a>. They have literally thousands of great icons.</p>
+        <p>I got it from <a href="https://icons8.com/icon/42849/security-checked">Icons8.com</a>. They have tons of great icons.</p>
 
         <hr>
-        <p>&copy; 2017 <a href="http://nealshyam.com">Neal Shyam</a> &middot; Email me at <a href="mailto:nealrs+hackme@gmail.com">nealrs @ gmail</a>
+        <p>&copy; 2017 <a href="http://nealshyam.com">Neal Shyam</a>
     </body>
 </html>
