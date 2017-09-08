@@ -14,7 +14,7 @@ import urllib
 app = Flask(__name__)
 ask = Ask(app, '/')
 logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s %(message)s')
-logging.getLogger('flask_ask').setLevel(logging.DEBUG)
+#logging.getLogger('flask_ask').setLevel(logging.DEBUG)
 
 # Helper Methods
 def sessionInfo():
