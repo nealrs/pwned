@@ -1,0 +1,7 @@
+mainIntent Have I been powned
+mainIntent Did I get hacked
+mainIntent have i been hacked
+mainIntent is my email safe
+mainIntent have i been compromised
+mainIntent has my email been compromised
+mainIntent has my email been hacked
