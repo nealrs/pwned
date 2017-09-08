@@ -91,7 +91,7 @@ def launch():
             breachList = oxford_comma_join(breaches)               
             speech = "Listen up " + name.split(" ", 1)[0] + ". Your email showed up in "+str(len(breaches))+" breaches: "+ breachList + ". You should rotate your passwords, start using a password manager, and enable two factor authentication on all of your accounts."
             card_title = "You've been pwned "+ name.split(" ", 1)[0]
-            card_text = "Your email showed up in "+str(len(breaches))+" breaches: "+ breachList + ".\nYou should rotate your passwords, start using a password manager, and enable two factor authentication on all of your accounts."
+            card_text = "Your email (" + email + ") showed up in "+str(len(breaches))+" breaches: "+ breachList + ".\nYou should rotate your passwords, start using a password manager, and enable two factor authentication on all of your accounts."
             return statement(speech).simple_card(title=card_title, content=card_text)
 
         else:
