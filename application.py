@@ -81,7 +81,7 @@ def launch():
     print "skill launch"
     sessionInfo()
     if ask_session.user.accessToken is None:
-        speech = "Welcome to Have I been powned. Please open the Alexa app to link this Skill with your Amazon account. This will enable us to check your email address against the H I B P database. We will not store, sell, or give away your email address."
+        speech = "Welcome to Hack Me. Please open the Alexa app to link this Skill with your Amazon account. This will enable us to check your email address against the Have I been powned database. We will not store, sell, or give away your email address."
         return statement(speech).link_account_card()
     else:
         name, email, userId  = getUser(ask_session.user.accessToken)
