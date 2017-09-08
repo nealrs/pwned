@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Hack Me ~ An Alexa Skill that checks to see if you've been pwned</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:300,400" rel="stylesheet">        <style>
+            h1{
+                Font-Family: 'Raleway', Sans-Serif;
+                Font-Size: 2rem;
+            }
+
+            h2 {
+                Font-Family: 'Raleway', Sans-Serif;
+                Font-Size: 1.5rem;
+            }
+
+            p {
+                Font-Family: 'Open Sans', Sans-Serif;
+                Font-Size: 1rem;
+                line-height: 1.5rem;
+            }
+
+            a {
+                color: #60813f
+            }
+        </style>
+    </head>
+    <body style="margin:auto; max-width:600px; padding: 0 20px;">
+        <p style="text-align:center;margin-top:10px;"><img src="{{ url_for('static', filename='img/shield_not_square.png') }}" style="height:150px;"></p>
+        <h1>Hack Me Privacy Policy &amp; FAQ</h1>
+        <h2>What does Hack Me do?</h2>
+        <p>Hack Me is an Alexa Skill that checks if your email address has been involved in any recent security breaches.</p>
+
+        <h2>How do you actually do that?</h2>
+        <p>When you first invoke the skill, you'll be asked to link it to your Amazon account. This enables us to request your name and email address from Amazon. Then we use Troy Hunt's <a href="https://haveibeenpwned.com">HaveIBeenPwned.com</a> API to determine if your email has ever been involved in a security breach. Finally, we tell you where and when using Alexa's TTS engine. That's it.</p>
+
+        <h2>What about my privacy and data?</h2>
+        <p>The whole point of this is security. So no, we'll never intentionally share, leak, sell, or store your personal information. And if you unlink or uninstall the Skill, we'll immediately lose access to your Amazon account information.</p>
+    
+        <h2>What are your ToS?</h2>
+        <p>Look, I'm not a lawyer. <a href="https://nealshyam.com">I'm just a guy</a> who likes to write code. This software and service are provided with no gaurantees or anything like that.</p>
+    
+        <h2>That's a nice icon, where did you get it?</h2>
+        <p>I got it from <a href="https://icons8.com/icon/42849/security-checked">Icons8.com</a>. They have literally thousands of great icons.</p>
+
+        <hr>
+        <p>&copy; 2017 <a href="http://nealshyam.com">Neal Shyam</a> &middot; Email me at <a href="mailto:nealrs+hackme@gmail.com">nealrs @ gmail</a>
+    </body>
+</html>

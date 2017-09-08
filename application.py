@@ -71,7 +71,7 @@ def oxford_comma_join(l):
 
 @app.route("/", methods=["GET", "POST"])
 def home():
-    return "Hi there.", 200
+    return render_template('privacy.html')
 
 # Alexa Intents
 @ask.launch
