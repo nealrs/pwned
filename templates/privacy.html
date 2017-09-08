@@ -1,6 +1,13 @@
-<html>
+<!doctype html>  
+<html lang="en">
     <head>
-        <title>Hack Me ~ An Alexa Skill that checks to see if you've been pwned</title>
+        <meta charset="utf-8">
+        <title>Hack Me &middot; An Alexa Skill that checks to see if you've been pwned</title>
+        <meta name="description" content="Install this Alexa Skill to check if you've been hacked recently.">
+        <meta name="author" content="Neal Shyam">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="{{ url_for('static', filename='img/shield_not_square.png') }}"> 
+        <link rel="apple-touch-icon" href="{{ url_for('static', filename='img/shield_not_square.png') }}"> 
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:300,400" rel="stylesheet">        <style>
             h1{
                 Font-Family: 'Raleway', Sans-Serif;
@@ -27,7 +34,7 @@
         <p style="text-align:center;margin-top:10px;"><img src="{{ url_for('static', filename='img/shield_not_square.png') }}" style="height:150px;"></p>
         <h1>Hack Me Privacy Policy &amp; FAQ</h1>
         <h2>What does Hack Me do?</h2>
-        <p>Hack Me is an Alexa Skill that checks if your email address has been involved in any recent security breaches.</p>
+        <p>Hack Me is an Alexa Skill that checks if your email address has been involved in a recent internet security breach.</p>
 
         <h2>How do you actually do that?</h2>
         <p>When you first invoke the skill, you'll be asked to link it to your Amazon account. This enables us to request your name and email address from Amazon. Then we use Troy Hunt's <a href="https://haveibeenpwned.com">HaveIBeenPwned.com</a> API to determine if your email has ever been involved in a security breach. Finally, we tell you where and when using Alexa's TTS engine. That's it.</p>
