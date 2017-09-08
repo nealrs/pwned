@@ -1,9 +1,9 @@
 {
-  "name": "Wifi Alexa",
-  "description": "an Alexa Skill that returns your wifi password",
+  "name": "Hack Me",
+  "description": "an Alexa Skill that checks your Amazon email against the HaveIBeenPwned database",
   "image": "heroku/python",
-  "repository": "https://github.com/nealrs/alexawifi",
-  "keywords": ["python", "flask", "alexa", "alexa skills kit" ],
+  "repository": "https://github.com/nealrs/pwned",
+  "keywords": ["python", "flask", "alexa", "alexa skills kit", "infosec" ],
   "buildpacks": [
     {
       "url": "https://github.com/heroku/heroku-buildpack-python"
